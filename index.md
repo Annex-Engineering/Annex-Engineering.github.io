@@ -12,6 +12,7 @@ Hey thats a good name for a blog.
 ### _3d printed musings._
 
 2020-09-19
+
 by: mental
 
   Surely at some point someone will post some content here. 
