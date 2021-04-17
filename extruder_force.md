@@ -127,7 +127,7 @@ Extruder force provides an interesting look at an important performance aspect o
 
 Our big takeaway: **ungeared extruders should be left in the past**. They simply don't utilize everything a stepper motor can provide, and their force is abysmally low compared to geared options.
 
-Moving from the 17mm to the 20mm motor on the Sherpa Mini or Orbiter seems to have marginal benefit unless you're *really* pushing plastic - you're adding additional weight and volume for a loss in performance at the flow rates most extruders can put out. Almost all of the high performance hotends on the market, except the Magnum+, top out at a max of 35 mm³/s, making the 20mm motor the least optimal choice for these applications, as it only starts to come into an advantage around that flow rate.
+Moving from the 17mm to the 20mm motor on the Sherpa Mini or Orbiter seems to have marginal benefit unless you're *really* pushing plastic - you're adding additional weight and volume for a loss in performance at the flow rates most extruders can put out. Almost all of the high performance hotends on the market, except the Magnum+, top out at a max of 35 mm³/s. This makes the 20mm motor the least optimal choice for these applications, as they only start to come into an advantage around that flow rate.
 
 Bondtech's BMG remains a great extruder solution, and it's given us the parts to make great designs, but there's a lot of room for improvement. It's outperformed in size, force and weight by the Orbiter (\~135g) and Sherpa Mini (\~110g). 
 
