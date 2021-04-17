@@ -6,7 +6,11 @@
 
 **NOTE:** If you have an extruder you'd like us to compare, and the data on its motor (if we don't have it yet) let us know! [Join our discord](https://discord.gg/MzTR3zE), we'd love to talk about it.
 
-Don't like math? [Skip to the plots](###%20Force-Flow%20Curves) (but keep the context in mind!)
+Don't like math? [Skip to the plots](#force-flow-curves) (but keep the context in mind!)
+
+![\[\]](https://i.imgur.com/qyCAsy9.png)
+
+*Left-to-right: Sherpa Mini, Double Folded Ascender, Dr. Lorincz Rober's Orbiter*
 
 ----------
 Extruder performance is a critical part of a well-functioning 3d printer. Here, we examine the filament force performance vs. flow rate of various extruder designs:
@@ -33,12 +37,14 @@ Comparing the force that different extruders can produce allows us to incorporat
 |------------------|---------------------|--------------|-----------------|----------------|
 | Sherpa Mini      | LDO-36STH17-1004AHG | 70           | 40              | 110            |
 | Sherpa Mini (8t) | LDO-36STH17-1004AHG | 70           | 40              | 110            |
-| Ascender         | LDO-36STH17-1004AHG | 70           | 62              | 132            |
+| Ascender         | LDO-36STH17-1004AH\*| 70           | 62              | 132            |
 | Orbiter          | LDO-36STH17-1004AHG | 70           | 65              | 135            |
 | BMG              | LDO-42STH20-1004AS1 | 127          | 75              | 202            |
 | Bondtech Mini    | LDO-42STH20-1004AS1 | -            | -               | -              |
 | Bondtech LGX     | LDO-42STH20-1004AS1 | 150          | 120             | 270            |
 | Creality         | LDO-42STH20-1004AS1 | 127          | 49              | 176            |
+
+\* The Ascender uses the 5mm shaft variant of the LDO-36STH17-1004AH, while all others use the integral gear variant (-G).
 
 ## Force Multiplier Calculation
 To determine the filament force, we need need to know the overall gear reduction of an extruder, its efficiency, and the effective diameter/radius of its drive gear - that is, approximately where it meshes with the filament itself. With these data, we can define a "force multiplier value", which allows us to determine the output force for a given input torque. It's calculated by dividing the overall reduction by the drive gear radius and multiplying by the drive gear efficiency. 
@@ -64,7 +70,7 @@ The following table lists out the data we're using for our various extruders. No
 | Bondtech LGX†     | NEMA 17 | Bondtech LGX | 45:14, 37:17        | ~90%        | 6.996             | ~8.9                    | 0.75                        |
 | Creality         | NEMA 17 | Brass Gear   | 1:1                 | 100%       | 1.000             | 5.5                    | 0.18                        |
 
-\*Worm drive efficiency depends heavily on the friction between the driving and driven gear - this value isn't well characterized for the Ascender - more on this topic in the future!
+\*Worm drive efficiency depends heavily on the friction between the driving and driven gear. This value isn't well characterized for the Ascender - more on this topic in the future!
 
 † We don't have the data on the LGX motor itself, so we've assumed it's similar in performance to the LDO 20mm motor used for the other NEMA 17 extruders. 
  
@@ -73,6 +79,8 @@ The following table lists out the data we're using for our various extruders. No
 To create extruder force-flow curves, we also need to know the torque-speed characteristics of the motors used. For simplicity, we're going to use the pull-out torque curve, although the actual dynamics of torque and speed are more complex than this. These curves have been provided by LDO for the following motors, and are shown in Figure 1. Note that there's incomplete data for these curves at higher speeds. In order to approximate this, we'll use a linear extrapolation, indicated by the dashed line on the curves.
 
 ![\[\]](https://i.imgur.com/tY4pY67.png)
+
+*Note that there's no 5mm integral shaft version of the LDO-36STH20-1004AH - that means the 20mm ascender numbers are theoretical, we can't test it yet.*
 
 We can convert this to flowrate by incorporating the filament, drive gear, and reduction. We'll use the standard 1.75mm. This gives us a cross-sectional area of `A = Pi * D²/4 = Pi * (1.75mm)²/4 = ~2.405 mm²`. Then, for a given flow rate (in `mm³/s`), we can determine the filament speed, and thus the motor speed, as such:
 
