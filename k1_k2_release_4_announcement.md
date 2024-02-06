@@ -34,7 +34,7 @@ The intention of the 4th release of these printers is to "move up market" and in
  - The electrical box
  - The toolhead (with a bounding box provided in the model)
  - The bed and heater
- - the printed version of the belt tensioners (which have many differneces from machined, but also greatly benefit the community by being released)
+ - the printed version of the belt tensioners (which have many differences from machined, but also greatly benefit the community by being released)
  - Anything not listed below
 
 #### Item that will move to closed source
