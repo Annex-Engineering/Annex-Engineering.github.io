@@ -10,7 +10,7 @@
 Hi, my name is Trails, I've gone by a few other names in the 3dp arena (Feb and Volcom). My real name is Brandon, I'm in my 30s and I've been doing this whole “design a printer” thing for longer than most have been part of the community as a whole. I have a masters in Mechanical Engineering, and have worked in both the design and manufacturing space in a few industries for about 13 years. Today we are going to tell a story then have a quick one sided discussion on why K1 and K2 are going to a partially closed source model. Maybe we can also correct some misconceptions about Annex and what we stand for as a group.
 
 ## History
-Annex was founded a few years ago, back before the mystical thing known as covid had taken over the land. The group started with a few members of the internal voron dev team and didnt quite like the direction some things were going; the Annex namesake came from an inside-joke about how all the real engineering in the was done off in the “annex” (ie: off in a ditch somewhere). Six months after "founding" Annex, I departed the Voron team and community, and took this as my “second full time job”. A few other community and dev members followed, most of whom make up the development team you see today.
+Annex was founded a few years ago, back before the mystical thing known as covid had taken over the land. The group started with a few members of the internal voron dev team that didnt quite like the direction some things were going; the Annex namesake came from an inside-joke about how all the real engineering in the was done off in the “annex” (ie: off in a ditch somewhere). Six months after "founding" Annex, I departed the Voron team and community, and took this as my “second full time job”. A few other community and dev members followed, most of whom make up the development team you see today.
 
 When the collective was originally founded, there were two members, Matt (mattthebaker) and myself. Matt worked on what is now the beacon project and I focused on ~15 printer concepts until the K1 and K2 printers were dreamed up after a youtube rabbit-hole adventure. Most of these never saw the light of day. Others joined quickly, and out spun Ascender, Sherpa, K3, and Redoubt. All of these early designs had one thing in common, the creator didnt like what they saw, and wanted to make it better, safer, or just different. Some early members will remember the Matterhorn project, which used a modified stratasys XY drive setup with servos and a heated build chamber. This unfortunately was shelved due to cost (at the time), complexity, and lack of availablility of rapid sheet metal prototyping. Since starting, according to my wife, I have spent too much fucking time working on that hot melt glue gun in the dining room. We stopped counting at about 1500 hours of development, 2 long years ago. We dont discuss dollars spent, because thats just plain sad.
 
@@ -37,7 +37,7 @@ The intention of the 4th release of these printers is to "move up market" and in
  - the printed version of the belt tensioners (which have many differences from machined, but also greatly benefit the community by being released)
  - Anything not listed below
 
-#### Item that will move to closed source
+#### Item that will move to closed sourceS
  - The X and Y drives and motor towers (the CNC and laser cut parts)
  - The z drive mechanism and its “joints” to the bed (the CNC and laser cut parts)
  - The wiring kit schematics (including carabiner)
